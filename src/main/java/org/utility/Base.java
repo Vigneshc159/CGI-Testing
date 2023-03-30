@@ -34,9 +34,10 @@ public class Base extends PropertyFileReader{
 
 	@BeforeMethod
 	public void launch() throws IOException {
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "C:\\New folder\\CGI\\CGI\\chromedriver.exe");
+		//WebDriverManager.chromedriver().setup();
 		
-		wb=new ChromeDriver();
+		WebDriver  wb=new ChromeDriver();
 		
 		wb.get("http://192.168.1.33/CGI/Views/LoginPage.aspx");
 		//wb.get("http://54.176.3.36/MX145/Views/CreateProposal.aspx?TransId=2542");
@@ -57,9 +58,9 @@ public class Base extends PropertyFileReader{
 
 
 	
-//		@AfterMethod
-//		public void close() {
-//			wb.quit();
-//		}
+		@AfterMethod
+		public void close() {
+			wb.quit();
+		}
 	
 }
