@@ -5,10 +5,6 @@
 		<classes>
 			<class name="org.test.Entry" />
 			
-			<class name="org.test.BankSetup" />
-			<class name="org.test.InstallerSetup" />
-			<class name="org.test.Investor" />
-			<class name="org.test.CustomerSetup" />
 			
 			
 			
