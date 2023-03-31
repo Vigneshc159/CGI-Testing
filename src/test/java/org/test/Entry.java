@@ -29,7 +29,7 @@ public class Entry extends Base{
 	}
 	@Test(priority=3, description="Check with Valid Email Id  & empty Password" )
 	public void TC3() throws IOException {
-		Propertyfilereader.propertyRead();
+		
 		String LoginID=PropertyFileReader.propertymap.get("loginid");
 		loginaction.login(LoginID, " ");
 		//		wb.findElement(By.xpath("//button[@class=\"btn btn-primary\"]")).click();
@@ -64,7 +64,7 @@ public class Entry extends Base{
 	}
 	@Test(priority=8 , description="Check 2FA Enable Acount User")
 	public void TC8() {
-		Propertyfilereader.propertyRead();
+		
 		String LoginID=PropertyFileReader.propertymap.get("2FAenable");
 		String Invalidpassword=PropertyFileReader.propertymap.get("2FAdisable");
 		loginaction.login(LoginID, Invalidpassword);
