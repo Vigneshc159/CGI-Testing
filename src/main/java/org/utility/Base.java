@@ -58,9 +58,9 @@ public class Base extends PropertyFileReader{
 
 
 	
-		@AfterMethod
-		public void close() {
-			wb.quit();
-		}
+	//	@AfterMethod
+	//	public void close() {
+	//		wb.quit();
+	//	}
 	
 }
